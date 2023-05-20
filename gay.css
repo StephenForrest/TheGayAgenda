@@ -1,0 +1,80 @@
+.main-container {
+    display: flex;
+    background: midnightblue;
+    width: 35%;
+    height: 25%;
+    border-radius: 1em;
+    color: aliceblue;
+    font-family: sans-serif;
+    font-size: 16px;
+    padding: 0.5em;
+    align-items: center;
+    flex-direction: column;
+}
+
+.verified-gay {
+    background: midnightblue;
+    border-radius: 1em;
+    display: block;
+    position: fixed;
+    width: 2em;
+    height: 2em;
+    padding: 0.5em;
+    left: 95%;
+    top: 90%;
+}
+
+.gay-download {
+    animation: rainbow-fill 18s ease infinite;
+}
+
+@keyframes rainbow-fill {
+    0% { fill: red; }
+    15% { fill: orange; }
+    30% { fill: yellow; }
+    45% { fill: green; }
+    60% { fill: blue; }
+    75% { fill: purple; }
+    100% { fill: red; }
+}
+
+.gay-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 1800% 1800%;
+
+    -webkit-animation: rainbow-background 18s ease infinite;
+    -moz-animation: rainbow-background 18s ease infinite;
+    -o-animation: rainbow-background 18s ease infinite;
+    animation: rainbow-background 18s ease infinite;
+}
+
+@-webkit-keyframes rainbow-background {
+    0% { background-position: 0 82% }
+    50% { background-position: 100% 19% }
+    100% { background-position: 0 82% }
+}
+@-moz-keyframes rainbow-background {
+    0% { background-position: 0 82% }
+    50% { background-position: 100% 19% }
+    100% { background-position: 0 82% }
+}
+@-o-keyframes rainbow-background {
+    0% { background-position: 0 82% }
+    50% { background-position: 100% 19% }
+    100% { background-position: 0 82% }
+}
+@keyframes rainbow-background {
+    0% { background-position: 0 82% }
+    50% { background-position: 100% 19% }
+    100% { background-position: 0 82% }
+}
